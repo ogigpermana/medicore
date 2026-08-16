@@ -1,0 +1,46 @@
+# Environment files
+.env
+.env.local
+.env.production
+
+# Vendor & Node modules
+/vendor/
+/node_modules/
+
+# Storage files
+/storage/logs/*
+/storage/cache/*
+/storage/sessions/*
+!/storage/logs/.gitkeep
+!/storage/cache/.gitkeep
+!/storage/sessions/.gitkeep
+
+# Uploads
+/public/uploads/*
+!/public/uploads/.gitkeep
+
+# IDE files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Composer
+composer.lock
+
+# Build files
+*.build
+dist/
+
+# Test files
+.phpunit.result.cache
+/tests/coverage/
+
+# Backup files
+*.bak
+*.backup
+*.old
