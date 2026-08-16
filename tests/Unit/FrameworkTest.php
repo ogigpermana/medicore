@@ -25,8 +25,10 @@ class FrameworkTest extends TestCase
 
     public function testApplicationSingleton()
     {
-        // Skip this test for now as it requires full bootstrap
-        $this->markTestSkipped('Application singleton test requires full bootstrap');
+        $app1 = Application::getInstance();
+        $app2 = Application::getInstance();
+        $this->assertSame($app1, $app2);
+        $this->assertInstanceOf(Application::class, $app1);
     }
 
     public function testContainerCanBindAndResolve()
